@@ -5,7 +5,7 @@ const generateMarkdownFile = require("./generateMarkdown");
 
 //This function makes the file and uses the returned template from the generateMarkdownFile function as the information stored.
 function writeToFile(data) {
-  fs.writeFile(`README.md`, generateMarkdownFile(data), (error) => {
+  fs.writeFile(`NEWREADME.md`, generateMarkdownFile(data), (error) => {
     error ? console.error(error) : console.log("worked!");
   });
 };
