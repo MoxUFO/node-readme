@@ -1,5 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// This function render the badge for the readme file.
 function renderLicenseBadge(license) {
   if (license !== 'None') {
     return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
@@ -7,8 +6,7 @@ function renderLicenseBadge(license) {
   return '';
 }
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// This function renders the license section of the readme
 function renderLicenseSection(license) {
   if (license !== 'None') {
     return `## License\n\nThis Project is under the ${license} license`;
@@ -16,7 +14,7 @@ function renderLicenseSection(license) {
   return '';
 }
 
-// TODO: Create a function to generate markdown for README
+// TODO: thisfunction handles the entire read me template.
 function generateMarkdownFile(data) {
   console.log("In my generateMarkdown File")
   console.log(data)
